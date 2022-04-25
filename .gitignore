@@ -4,3 +4,5 @@ node_modules
 /server/package-lock.json
 /graphql-server/node_modules
 /.idea
+server/env
+.env
