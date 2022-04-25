@@ -1,0 +1,16 @@
+div.SearchResults {
+	position: absolute;
+	/* z-index: 1; */
+	color: white;
+	border-style: solid;
+	width: fit-content;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0;
+}
+
+.SearchResults ul {
+	list-style: none;
+	padding: 0;
+}

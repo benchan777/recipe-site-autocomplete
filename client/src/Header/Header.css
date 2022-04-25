@@ -1,0 +1,20 @@
+.Header {
+	box-sizing: border-box;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+
+.Header a:link {
+	color: #ffcc66;
+	text-decoration: none;
+}
+
+.Header a:visited {
+	color: #ffcc66;
+}

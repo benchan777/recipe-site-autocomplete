@@ -1,0 +1,27 @@
+a.RecipeCardLink {
+	text-align: center;
+	border-style: solid;
+	border-width: 2px;
+	padding: 0 5px 0 5px;
+	margin: 10px;
+	flex: 0 1 calc(32% - 30px);
+	width: fit-content;
+}
+
+a.RecipeCardLink:link {
+	text-decoration: none;
+	color: rgb(209, 209, 209);
+}
+
+a.RecipeCardLink:visited {
+	color: rgb(209, 209, 209);
+}
+
+a.RecipeCardLink:hover {
+	color: #ffcc66;
+}
+
+/* .RecipeCard > img {
+	width: 100%;
+	height: auto;
+} */

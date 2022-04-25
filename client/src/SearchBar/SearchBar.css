@@ -1,0 +1,8 @@
+div.SearchBar {
+	color: white;
+	text-align: center;
+}
+
+.SearchBar input[type='text'] {
+	color: white;
+}

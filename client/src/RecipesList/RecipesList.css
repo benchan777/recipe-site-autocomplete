@@ -1,0 +1,8 @@
+.RecipesList {
+	/* width: calc(100% - 100px); */
+	max-width: 75%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
