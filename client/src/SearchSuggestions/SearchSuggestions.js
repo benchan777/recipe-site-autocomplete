@@ -24,7 +24,7 @@ const SearchSuggestions = (props) => {
 		if (searchTerm.length >= 1) {
 			fetchData();
 		}
-	});
+	}, [searchTerm]);
 
 	if (data.length > 0) {
 		console.log('There are results.');
