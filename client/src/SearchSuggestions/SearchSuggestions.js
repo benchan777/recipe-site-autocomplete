@@ -27,15 +27,11 @@ const SearchSuggestions = (props) => {
 	}, [searchTerm]);
 
 	if (data.length > 0) {
-		console.log('There are results.');
-		console.log(data);
 		let searchArr = data.map((name) => (
 			<Link to={`/details/${encodeURIComponent(name)}`}>
 				<li>{name}</li>
 			</Link>
 		));
-
-		console.log(searchArr);
 
 		return (
 			<div className="SearchResults" onClick={props.onClick}>
@@ -43,7 +39,6 @@ const SearchSuggestions = (props) => {
 			</div>
 		);
 	} else {
-		console.log(`No matching names`);
 		return <div></div>;
 	}
 };
