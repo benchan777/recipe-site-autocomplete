@@ -11,9 +11,6 @@ class PrefixTree:
             for string in strings:
                 self.insert(string)
 
-    def is_empty(self):
-        return True if self.size == 0 else False
-
     def insert(self, string):
         parent = self.root
         for letter in string:
