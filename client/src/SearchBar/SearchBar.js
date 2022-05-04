@@ -7,8 +7,8 @@ const SearchBar = () => {
 	const [searchTerm, setSearchTerm] = useState('');
 
 	let inputHandler = (e) => {
-		var lowercase = e.target.value.toLowerCase();
-		setSearchTerm(lowercase);
+		var searchTerm = e.target.value;
+		setSearchTerm(searchTerm);
 	};
 
 	const clearSearchbar = () => {
