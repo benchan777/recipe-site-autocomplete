@@ -1,6 +1,4 @@
 node_modules
-/server/Dockerfile
-/server/captain-definition
 /server/package-lock.json
 /graphql-server/node_modules
 /.idea
