@@ -34,10 +34,10 @@ def homepage():
 def autocomplete():
   args = request.json
   prefix = args.get('prefix')
-  print(f'Args: {prefix}')
+  # print(f'Args: {prefix}')
   responses = tree.complete(prefix)
 
-  print(responses)
+  # print(responses)
   return jsonify({"response": responses})
 
 if __name__ == '__main__':

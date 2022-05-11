@@ -1,1 +1,1 @@
-[Live site here](https://recipes.carblife.icu/#/)
+[Live site here](https://recipe-site-autocomplete-frontend.main.benchan.tech/)
