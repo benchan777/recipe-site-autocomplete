@@ -5,4 +5,5 @@ div.SearchBar {
 
 .SearchBar input[type='text'] {
 	color: white;
+  width: 250px;
 }
