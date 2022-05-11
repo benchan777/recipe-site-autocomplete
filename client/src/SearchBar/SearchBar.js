@@ -1,14 +1,18 @@
 import { React, useState } from 'react';
-import TextField from '@mui/material/TextField';
 import SearchSuggestions from '../SearchSuggestions/SearchSuggestions';
 import './SearchBar.css';
 
 const SearchBar = () => {
 	const [searchTerm, setSearchTerm] = useState('');
 
-	let inputHandler = (e) => {
+	let updateSearchTerm = (e) => {
 		var searchTerm = e.target.value;
 		setSearchTerm(searchTerm);
+	};
+
+	const showSearchResults = () => {
+		setSearchTerm('');
+		document.getElementById('SearchResults').style.display = 'block';
 	};
 
 	const clearSearchbar = () => {
@@ -17,12 +21,15 @@ const SearchBar = () => {
 
 	return (
 		<div className="SearchBar">
-			<TextField
-				id="TextField"
-				onChange={inputHandler}
-				value={searchTerm}
-				placeholder="Search database"
-			/>
+			<form>
+				<input
+					id="TextField"
+					onChange={updateSearchTerm}
+					onClick={showSearchResults}
+					value={searchTerm}
+					placeholder="Search database"
+				></input>
+			</form>
 			<SearchSuggestions searchTerm={searchTerm} onClick={clearSearchbar} />
 		</div>
 	);
